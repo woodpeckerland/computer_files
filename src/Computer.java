@@ -58,15 +58,19 @@ public abstract class Computer {
         setGespeicherteDateien(this.gespeicherteDateien);
     }
 
-    /* todo
-    ArrayList<String> transferiereDatei(Computer zielComputer, String dateiname) {
-        return;
+    public void transferiereDatei(Computer zielComputer, String dateiname) {
+
+        ArrayList<String> dateienZielComputer = zielComputer.getGespeicherteDateien();
+        ArrayList<String> meinComputer = this.getGespeicherteDateien();
+
+        for (String s : meinComputer) {
+            if (s.equals(dateiname)) dateienZielComputer.add(dateiname);
+        }
     }
-     */
+}
 
     /* todo
     void zeigeGespeicherteDateien() {
         return;
     }
      */
-}

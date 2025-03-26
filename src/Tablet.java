@@ -2,10 +2,10 @@ import java.util.ArrayList;
 
 public class Tablet extends Computer {
 
-    private double displayGroesse;
+    private int displayGroesse;
     private boolean hatStift;
 
-    public Tablet(String hersteller, String modell, int baujahr, ArrayList<String> gespeicherteDateien, double displayGroesse, boolean hatStift) {
+    public Tablet(String hersteller, String modell, int baujahr, ArrayList<String> gespeicherteDateien, int displayGroesse, boolean hatStift) {
         super(hersteller, modell, baujahr, gespeicherteDateien);
         this.displayGroesse = displayGroesse;
         this.hatStift = hatStift;
@@ -15,7 +15,7 @@ public class Tablet extends Computer {
         return displayGroesse;
     }
 
-    public void setDisplayGroesse(double displayGroesse) {
+    public void setDisplayGroesse(int displayGroesse) {
         this.displayGroesse = displayGroesse;
     }
 

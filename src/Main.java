@@ -16,14 +16,17 @@ public class Main {
 
         laptop.starten();
         laptop.erstelleDatei();
+        laptop.transferiereDatei(tablet, "datei.txt");
         System.out.println(laptop);
 
         tablet.starten();
         tablet.erstelleDatei();
+        tablet.transferiereDatei(tower, "bild.jpg");
         System.out.println(tablet);
 
         tower.starten();
         tower.erstelleDatei();
+        tower.transferiereDatei(workstation, "tabelle.xls");
         System.out.println(tower);
 
         workstation.starten();
