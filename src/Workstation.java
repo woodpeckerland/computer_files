@@ -20,8 +20,9 @@ public class Workstation extends Computer {
     @Override
     void starten() {
         System.out.println("""
-                --->
-                Ihre Workstation wird gestartet.""");
+
+                Deine Workstation wird gestartet.
+                --->""");
     }
 
     @Override
@@ -30,7 +31,6 @@ public class Workstation extends Computer {
         return "Modell: " + this.getModell() + "\n"
                 + "Hersteller: " + this.getHersteller() + "\n"
                 + "Baujahr: " + this.getBaujahr() + "\n"
-                + "Prozessor: " + this.getProzessor() + "\n"
-                + "Dateien: " + this.getGespeicherteDateien();
+                + "Prozessor: " + this.getProzessor() + "\n";
     }
 }

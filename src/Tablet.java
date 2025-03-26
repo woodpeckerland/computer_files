@@ -30,8 +30,9 @@ public class Tablet extends Computer {
     @Override
     void starten() {
         System.out.println("""
-                --->
-                Ihr Tablet wird gestartet.""");
+
+                Dein Tablet wird gestartet.
+                --->""");
     }
 
     @Override
@@ -41,7 +42,6 @@ public class Tablet extends Computer {
                 + "Hersteller: " + this.getHersteller() + "\n"
                 + "Baujahr: " + this.getBaujahr() + "\n"
                 + "Displaygröße: " + this.getDisplayGroesse() + " inches\n"
-                + "Stift: " + this.isHatStift() + "\n"
-                + "Dateien: " + this.getGespeicherteDateien();
+                + "Stift: " + this.isHatStift() + "\n";
     }
 }

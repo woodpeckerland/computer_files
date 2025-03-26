@@ -30,8 +30,9 @@ public class Laptop extends Computer {
     @Override
     void starten() {
         System.out.println("""
-                --->
-                Ihr Laptop wird gestartet.""");
+                
+                Dein Laptop wird gestartet.
+                --->""");
     }
 
     @Override
@@ -41,7 +42,6 @@ public class Laptop extends Computer {
                 + "Hersteller: " + this.getHersteller() + "\n"
                 + "Baujahr: " + this.getBaujahr() + "\n"
                 + "Gewicht: " + this.getGewicht() + " kg\n"
-                + "Akkulaufzeit: " + this.getAkkulaufzeit() + " h\n"
-                + "Dateien: " + this.getGespeicherteDateien();
+                + "Akkulaufzeit: " + this.getAkkulaufzeit() + "h\n";
     }
 }

@@ -15,22 +15,26 @@ public class Main {
         Workstation workstation = new Workstation("Apple", "Mac Pro", 2024, dateienWorkstation, "M2 Ultra");
 
         laptop.starten();
+        System.out.println(laptop);
         laptop.erstelleDatei();
         laptop.transferiereDatei(tablet, "datei.txt");
-        System.out.println(laptop);
+        laptop.zeigeGespeicherteDateien();
 
         tablet.starten();
+        System.out.println(tablet);
         tablet.erstelleDatei();
         tablet.transferiereDatei(tower, "bild.jpg");
-        System.out.println(tablet);
+        tablet.zeigeGespeicherteDateien();
 
         tower.starten();
+        System.out.println(tower);
         tower.erstelleDatei();
         tower.transferiereDatei(workstation, "tabelle.xls");
-        System.out.println(tower);
+        tower.zeigeGespeicherteDateien();
 
         workstation.starten();
-        workstation.erstelleDatei();
         System.out.println(workstation);
+        workstation.erstelleDatei();
+        workstation.zeigeGespeicherteDateien();
     }
 }

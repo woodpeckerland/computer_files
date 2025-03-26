@@ -20,8 +20,9 @@ public class Tower extends Computer {
     @Override
     void starten() {
         System.out.println("""
-                --->
-                Ihr Tower wird gestartet.""");
+
+                Dein Tower wird gestartet.
+                --->""");
     }
 
     @Override
@@ -30,7 +31,6 @@ public class Tower extends Computer {
         return "Modell: " + this.getModell() + "\n"
                 + "Hersteller: " + this.getHersteller() + "\n"
                 + "Baujahr: " + this.getBaujahr() + "\n"
-                + "Grafikkarte: " + this.isHatGrafikkarte() + "\n"
-                + "Dateien: " + this.getGespeicherteDateien();
+                + "Grafikkarte: " + this.isHatGrafikkarte() + "\n";
     }
 }

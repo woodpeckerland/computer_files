@@ -51,7 +51,7 @@ public abstract class Computer {
 
     public void erstelleDatei() {
 
-        System.out.print("Erstelle deine Datei: ");
+        System.out.print("Erstelle eine Datei: ");
         Scanner sc = new Scanner(System.in);
         String dateiname = sc.nextLine();
         this.gespeicherteDateien.add(dateiname);
@@ -67,10 +67,8 @@ public abstract class Computer {
             if (s.equals(dateiname)) dateienZielComputer.add(dateiname);
         }
     }
-}
 
-    /* todo
-    void zeigeGespeicherteDateien() {
-        return;
+    public void zeigeGespeicherteDateien() {
+       System.out.println(this.getGespeicherteDateien());
     }
-     */
+}
