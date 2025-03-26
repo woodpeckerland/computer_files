@@ -29,7 +29,9 @@ public class Tablet extends Computer {
 
     @Override
     void starten() {
-        System.out.println("Ihr Tablet wird gestartet.");
+        System.out.println("""
+                --->
+                Ihr Tablet wird gestartet.""");
     }
 
     @Override

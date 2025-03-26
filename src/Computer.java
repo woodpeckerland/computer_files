@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Scanner;
 
 public abstract class Computer {
 
@@ -42,17 +43,22 @@ public abstract class Computer {
         return gespeicherteDateien;
     }
 
-    public void setGespeicherteDateien(ArrayList<String> gespeicherteDateien) {
+    private void setGespeicherteDateien(ArrayList<String> gespeicherteDateien) {
         this.gespeicherteDateien = gespeicherteDateien;
     }
 
     abstract void starten();
 
-    /* todo
-    ArrayList<String> erstelleDatei(String dateiname) {
-        return;
+    public void erstelleDatei() {
+
+        System.out.print("Erstelle deine Datei: ");
+
+        Scanner sc = new Scanner(System.in);
+        String dateiname = sc.nextLine();
+
+        this.gespeicherteDateien.add(dateiname);
+        setGespeicherteDateien(this.gespeicherteDateien);
     }
-     */
 
     /* todo
     ArrayList<String> transferiereDatei(Computer zielComputer, String dateiname) {

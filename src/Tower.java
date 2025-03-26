@@ -19,7 +19,9 @@ public class Tower extends Computer {
 
     @Override
     void starten() {
-        System.out.println("Ihr Tower wird gestartet.");
+        System.out.println("""
+                --->
+                Ihr Tower wird gestartet.""");
     }
 
     @Override

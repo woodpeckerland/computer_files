@@ -19,7 +19,9 @@ public class Workstation extends Computer {
 
     @Override
     void starten() {
-        System.out.println("Ihre Workstation wird gestartet.");
+        System.out.println("""
+                --->
+                Ihre Workstation wird gestartet.""");
     }
 
     @Override
