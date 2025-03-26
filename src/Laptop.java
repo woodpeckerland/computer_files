@@ -29,7 +29,9 @@ public class Laptop extends Computer {
 
     @Override
     void starten() {
-        System.out.println("Ihr Laptop wird gestartet.");
+        System.out.println("""
+                --->
+                Ihr Laptop wird gestartet.""");
     }
 
     @Override
