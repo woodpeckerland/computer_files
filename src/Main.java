@@ -24,6 +24,7 @@ public class Main {
         System.out.println(tablet);
         tablet.erstelleDatei();
         tablet.transferiereDatei(tower, "bild.jpg");
+        tablet.loescheDatei();
         tablet.zeigeGespeicherteDateien();
 
         tower.starten();

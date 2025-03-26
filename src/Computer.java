@@ -51,7 +51,7 @@ public abstract class Computer {
 
     public void erstelleDatei() {
 
-        System.out.print("Erstelle eine Datei: ");
+        System.out.print("Datei erstellen : ");
         Scanner sc = new Scanner(System.in);
         String dateiname = sc.nextLine();
         this.gespeicherteDateien.add(dateiname);
@@ -65,6 +65,18 @@ public abstract class Computer {
 
         for (String s : meinComputer) {
             if (s.equals(dateiname)) dateienZielComputer.add(dateiname);
+        }
+    }
+
+    public void loescheDatei() {
+
+        System.out.print("Datei löschen : ");
+        Scanner sc = new Scanner(System.in);
+        String dateiname = sc.nextLine();
+        ArrayList<String> meinComputer = this.getGespeicherteDateien();
+
+        for (String s : meinComputer) {
+            if (s.equals(dateiname)) meinComputer.remove(dateiname);
         }
     }
 
